@@ -109,7 +109,7 @@ function colorChange() {
 
     state = 1;
   }
-  console.log(state);
+  console.log("Hero state: " + state);
 }
 colorChange();
 state = 2;
