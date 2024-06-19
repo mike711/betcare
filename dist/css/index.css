@@ -857,7 +857,11 @@ body.modal-open {
   transform: scale(1, 1);
   transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+#hero__buttonBG{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 #hero__buttonBG svg {
   --gradient-1: #e0833c;
