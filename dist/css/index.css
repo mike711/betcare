@@ -876,10 +876,11 @@ body.modal-open {
   --gradient-stroke-2: #ff4f40;
   --gradient-stroke-3: #db3278;
 
-  transition: box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   border-radius: 22px;
 
   --button-glow-color: #e0483e;
+  z-index: -1;
 }
 #hero__buttonBG svg rect{
   stroke-width: 1;
@@ -892,7 +893,9 @@ body.modal-open {
 
 
 #hero__button-wrap:active #hero__buttonBG svg {
-  box-shadow: var(--button-glow-color) 0px 0px 32px 0px;
+  /* box-shadow: var(--button-glow-color) 0px 0px 32px; */
+  filter: drop-shadow(0 0 24px var(--button-glow-color));
+  transform: translateZ(0);
 }
 
 /* BUTTON HOVER STYLES */
